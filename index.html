@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CJ & Sons Wash Co</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #020617;
+      color: white;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+      url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #06b6d4;
+      color: black;
+      padding: 15px 30px;
+      border-radius: 12px;
+      font-weight: bold;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+
+    .btn-dark {
+      background: #111827;
+      color: white;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #94a3b8;
+      margin-bottom: 50px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #0f172a;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .card h3 {
+      color: #22d3ee;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .cta {
+      background: #06b6d4;
+      color: black;
+      text-align: center;
+    }
+
+    .cta h2 {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: black;
+      text-align: center;
+      padding: 40px 20px;
+      color: #94a3b8;
+    }
+
+    footer p:first-child {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <p style="color:#22d3ee; letter-spacing:3px; text-transform:uppercase;">
+        Garner, NC Pressure Washing Experts
+      </p>
+
+      <h1>CJ & Sons Wash Co</h1>
+
+      <p>
+        Professional Pressure Washing, Soft Washing & Roof Stain Removal
+        Serving Garner, NC and surrounding areas.
+      </p>
+
+      <a class="btn" href="tel:9198196577">Call 919-819-6577</a>
+
+      <a class="btn btn-dark"
+         href="https://www.facebook.com/profile.php?id=61576632299695"
+         target="_blank">
+         Visit Our Facebook
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Our Services</h2>
+
+      <p class="subtitle">
+        Residential and commercial exterior cleaning solutions.
+      </p>
+
+      <div class="services">
+
+        <div class="card">
+          <h3>Pressure Washing</h3>
+          <p>
+            Driveways, sidewalks, patios, pool decks,
+            fences and concrete cleaning.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Soft Washing</h3>
+          <p>
+            Safe low-pressure exterior washing
+            for siding and delicate surfaces.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Roof Stain Removal</h3>
+          <p>
+            Remove black streaks, algae, moss and
+            roof discoloration safely.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Recent Projects</h2>
+
+      <p class="subtitle">
+        Real work from homes across Garner and surrounding areas.
+      </p>
+
+      <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready To Restore Your Property?</h2>
+
+      <p style="font-size:1.2rem; margin-bottom:30px;">
+        Contact CJ & Sons Wash Co today for a free estimate.
+      </p>
+
+      <a class="btn btn-dark" href="tel:9198196577">
+        📞 919-819-6577
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>CJ & Sons Wash Co</p>
+    <p>Pressure Washing • Soft Washing • Roof Cleaning</p>
+    <p>Serving Garner, NC + 20 Mile Radius</p>
+  </footer>
+
+</body>
+</html>
