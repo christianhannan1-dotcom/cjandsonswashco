@@ -1,0 +1,227 @@
+export default function PressureWashingWebsite() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      {/* Hero Section */}
+      <section className="relative bg-black text-white">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-40"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop')",
+          }}
+        />
+
+        <div className="relative max-w-7xl mx-auto px-6 py-28 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+            Professional Pressure Washing Services
+          </h1>
+          <p className="mt-6 text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
+            Residential & commercial exterior cleaning that restores curb appeal and keeps your property looking its best.
+          </p>
+
+          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="#quote"
+              className="bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-8 py-4 rounded-2xl transition"
+            >
+              Get a Free Quote
+            </a>
+
+            <a
+              href="tel:5555555555"
+              className="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-2xl transition"
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-14 items-center">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"
+            alt="Pressure washing driveway"
+            className="rounded-3xl shadow-2xl object-cover h-full"
+          />
+        </div>
+
+        <div>
+          <p className="uppercase tracking-[0.3em] text-cyan-600 font-semibold">
+            About Us
+          </p>
+
+          <h2 className="text-4xl font-bold mt-4">
+            Reliable Exterior Cleaning You Can Trust
+          </h2>
+
+          <p className="mt-6 text-lg text-gray-600 leading-8">
+            We specialize in professional pressure washing and soft washing services designed to safely clean homes, driveways, sidewalks, patios, fences, roofs, and commercial properties.
+          </p>
+
+          <p className="mt-4 text-lg text-gray-600 leading-8">
+            Our mission is simple: deliver outstanding results, honest pricing, and dependable service every time.
+          </p>
+
+          <div className="mt-8 grid grid-cols-2 gap-6">
+            <div className="bg-gray-100 p-6 rounded-2xl">
+              <h3 className="text-3xl font-bold">100%</h3>
+              <p className="text-gray-600 mt-2">Customer Satisfaction</p>
+            </div>
+
+            <div className="bg-gray-100 p-6 rounded-2xl">
+              <h3 className="text-3xl font-bold">Fast</h3>
+              <p className="text-gray-600 mt-2">Free Estimates</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="bg-gray-100 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto">
+            <p className="uppercase tracking-[0.3em] text-cyan-600 font-semibold">
+              Our Services
+            </p>
+            <h2 className="text-4xl font-bold mt-4">
+              Exterior Cleaning Solutions
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            {[
+              {
+                title: 'House Washing',
+                desc: 'Safely remove dirt, algae, mold, and mildew from your home exterior.',
+              },
+              {
+                title: 'Driveway & Concrete Cleaning',
+                desc: 'Restore concrete surfaces and improve curb appeal instantly.',
+              },
+              {
+                title: 'Roof Soft Washing',
+                desc: 'Low-pressure roof cleaning that protects shingles while removing stains.',
+              },
+              {
+                title: 'Fence & Deck Cleaning',
+                desc: 'Bring wood and fencing back to life with professional washing.',
+              },
+              {
+                title: 'Commercial Pressure Washing',
+                desc: 'Keep storefronts, sidewalks, and commercial buildings clean and professional.',
+              },
+              {
+                title: 'Gutter Brightening',
+                desc: 'Remove black streaks and buildup from gutters and exterior trim.',
+              },
+            ].map((service) => (
+              <div
+                key={service.title}
+                className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition"
+              >
+                <h3 className="text-2xl font-bold">{service.title}</h3>
+                <p className="mt-4 text-gray-600 leading-7">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center">
+          <p className="uppercase tracking-[0.3em] text-cyan-600 font-semibold">
+            Recent Work
+          </p>
+          <h2 className="text-4xl font-bold mt-4">
+            Before & After Results
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 mt-16">
+          {[
+            'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1600566753151-384129cf4e3e?q=80&w=1200&auto=format&fit=crop',
+            'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1200&auto=format&fit=crop',
+          ].map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt="Pressure washing project"
+              className="rounded-3xl h-80 w-full object-cover shadow-lg"
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-black text-white py-24 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="uppercase tracking-[0.3em] text-cyan-400 font-semibold">
+            Customer Reviews
+          </p>
+
+          <h2 className="text-4xl font-bold mt-4">
+            What Our Customers Say
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            {[
+              'Excellent service and my driveway looks brand new again.',
+              'Very professional, on time, and affordable pricing.',
+              'The house wash completely transformed our home exterior.',
+            ].map((review, index) => (
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur rounded-3xl p-8"
+              >
+                <p className="text-lg leading-8">“{review}”</p>
+                <div className="mt-6 text-cyan-400 font-semibold">
+                  ★★★★★
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="quote" className="py-24 px-6 bg-cyan-500">
+        <div className="max-w-4xl mx-auto text-center text-black">
+          <h2 className="text-5xl font-bold">
+            Ready To Transform Your Property?
+          </h2>
+
+          <p className="mt-6 text-xl">
+            Contact us today for a free estimate.
+          </p>
+
+          <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
+            <a
+              href="tel:5555555555"
+              className="bg-black text-white px-8 py-4 rounded-2xl font-semibold hover:opacity-90"
+            >
+              Call (555) 555-5555
+            </a>
+
+            <a
+              href="mailto:yourbusiness@email.com"
+              className="bg-white px-8 py-4 rounded-2xl font-semibold hover:opacity-90"
+            >
+              Email Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-950 text-gray-400 py-10 px-6 text-center">
+        <p>
+          © 2026 Your Pressure Washing Business. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  );
+}
